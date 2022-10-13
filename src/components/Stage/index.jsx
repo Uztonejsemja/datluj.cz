@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Wordbox from '../Wordbox';
 import wordList from '../../word-list';
 import './style.css';
@@ -19,6 +19,7 @@ const generateWord = (size) => {
 
 const Stage = () => {
   const [words, setWords] = useState(['jahoda']);
+
 
   return (
     <div className="stage">
